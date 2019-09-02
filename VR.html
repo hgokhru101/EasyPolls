@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="VR.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+</head>
+<body>
+    <form action="VR.html" class="vregistration-form">
+    	<h1>Voter Registration form</h1>
+    	<div class="txtb">
+          <input type="text" required>
+          <span data-placeholder="Enter first name"></span>
+        </div>
+        <div class="txtb">
+          <input type="text" reqiured>
+          <span data-placeholder="Enter last name"></span>
+        </div>
+		<div class="txtb">
+          <input type="text">
+          <span data-placeholder="Flat no.,Building name"></span>
+        </div>
+        <div class="txtb">
+          <input type="text">
+          <span data-placeholder="Road,Locality"></span>
+        </div>
+        <div class="txtb">
+          <input type="text">
+          <span data-placeholder="City"></span>
+        </div>
+        <div class="txtb">
+          <input type="text">
+          <span data-placeholder="Contact"></span>
+        </div>
+        <div class="txtb">
+          <input type="text">
+          <span data-placeholder="Birthdate(e.g:01-08-2001)"></span>
+        </div>
+		<input type="radio" name="Gender">Male
+		<input type="radio" name="Gender">Female
+		<br>
+		<div class="txtb">
+          <input type="text">
+          <span data-placeholder="Age"></span>
+        </div>
+		<input type="checkbox"  name="Document" value="Document 1">
+		<div class="tooltip">Document 1
+  			<span class="tooltiptext">Birth certificate</span>
+		</div>
+		<input type="checkbox"  name="Document" value="Document 2">
+		<div class="tooltip">Document 2
+  			<span class="tooltiptext">Residential proof</span>
+		</div>
+		<input type="checkbox"  name="Document" value="Document 3">
+		<div class="tooltip">Document 3
+  			<span class="tooltiptext">Citizenship proof</span>
+		</div>
+		<br>
+		<br>
+		<input type="checkbox">I agree with all rules and regulations<br>
+		<input type="submit" class="Regbtn" value="Submit">
+      </form>
+	</div>
+	<script type="text/javascript">
+      $(".txtb input").on("focus",function(){
+        $(this).addClass("focus");
+      });
+      $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+      </script>
+</body>
+</html>

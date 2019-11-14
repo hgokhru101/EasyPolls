@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="PR.css">
+</head>
+<body>
+    <form action="PR.php" class="pregistration-form" method="POST">
+    	<h1>Party Registration form</h1>
+    	<div class="txtb">
+          <input name="party_name" type="text" required>
+          <span  data-placeholder="Enter Party name"></span>
+        </div>
+        <div class="txtb">
+          <input name="party_abbrev" type="text" reqiured>
+          <span data-placeholder="Enter Party Abbreviation name"></span>
+        </div>
+		<div class="txtb">
+          <input name="party_head" type="text" required>
+          <span data-placeholder="Enter Party Head"></span>
+        </div>
+		<br>
+		<br>
+		<input type="checkbox">I agree with all rules and regulations<br>
+		<br>
+		<br>
+		<input name="submit" type="submit" class="Regbtn" value="Submit">
+      </form>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+	<script type="text/javascript">
+      $(".txtb input").on("focus",function(){
+        $(this).addClass("focus");
+      });
+      $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+      </script>
+</body>
+</html>

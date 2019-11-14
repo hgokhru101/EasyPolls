@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+	<nav class="side-menu">
+        <ul>
+            <li><a href="home.html">Home<span><i class="fas fa-map-marker"></i></span></a></li>
+            <li><a href="FAQ.html">FAQ<span><i class="fas fa-compass"></i></span></a></li>
+            <li><a href="Aboutus.html">About Us<span><i class="fas fa-bicycle"></i></span></a></li>
+        </ul>
+    </nav>
+    <div class="gallery-section">
+      <div class="inner-width">
+        <h1>Gallery</h1>
+        <div class="border"></div>
+        <div class="gallery">
+
+          <a href="p1.jpg" class="image">
+            <img src="p1.jpg" alt="">
+          </a>
+
+          <a href="p2.jpg" class="image">
+          <img src="p2.jpg" alt="">
+          </a>
+
+          <a href="p3.jpg" class="image">
+            <img src="p3.jpg" alt="">
+          </a>
+
+          <a href="p4.jpg" class="image">
+            <img src="p4.jpg" alt="">
+          </a>
+
+          <a href="p5.jpg" class="image">
+            <img src="p5.jpg" alt="">
+          </a>
+
+          <a href="p6.jpg" class="image">
+            <img src="p6.jpg" alt="">
+          </a>
+
+          <a href="p7.jpg" class="image">
+            <img src="p7.jpg" alt="">
+          </a>
+
+          <a href="p8.jpg" class="image">
+            <img src="p8.jpg" alt="">
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+
+  <script>
+    $(".gallery").magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      gallery:{
+        enabled: true
+      }
+    });
+  </script>
+
+  </body>
+</html>

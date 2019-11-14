@@ -1,0 +1,256 @@
+
+body {
+    background-image: url('admin.jpg');
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    top:0;
+    bottom:0;
+    z-index:-10;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+html{
+    box-sizing:border-box;
+}
+
+img{
+  width: 100px;
+  height: 100px;
+}
+.logo-link{
+  display: inline-block;
+  position: relative;
+  top: 60px;
+  left: 185px;
+  margin: 0 24px;
+}
+.logo-link img {
+  display: block;
+}
+.vertical_align{ 
+  position: relative;
+padding-top:30px;
+  left: 500px;
+  display: inline-block;
+  vertical-align: top;
+}
+.Regbtn,button{
+  text-align: center;
+  display: block;
+  width: 20%;
+  height: 50px;
+  border: none;
+  background: linear-gradient(120deg,#CAC5C4,#221F1F,#CAC5C4);
+  border-radius: 20px;
+  background-size: 200%;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.Regbtn:hover,button:hover{
+  background-position: right;
+}
+.form-control {
+  position: relative;
+  font-family: Arial;
+}
+
+.form-control select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menuitem:link, .menuitem:visited
+{
+	display: inline;
+	font-size: 25px;
+	font-style: bold;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 10px 15px;
+	font-family: comic sans ms;
+    text-align: left;
+	margin: 2px;
+
+}
+nav {
+    width: 70vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.menu {
+    font-size: 2vw;
+    padding: 0vh 2vw 0vh 2vw;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: comic sans ms;
+    text-align: left;
+	margin: 2px;
+}
+a.menu:link, a.menu:visited
+{
+	display: inline;
+	/*background-color: #ffffff;*/
+	font-size: 25px;
+	font-style: bold;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 10px 15px;
+	font-family: comic sans ms;
+    text-align: left;
+	margin: 2px;
+
+}
+a.menu:hover, a.menu:active
+{
+	color:  #3C3FB5 ;
+	text-align: left;
+	text-decoration: none;
+	display: inline;
+}
+
+.menuitem {
+    text-decoration: none;
+    padding: 1vw 4vh 1vw 4vh;
+    font-family: 'Lobster';
+    font-size: 1.5vw;
+    color: black;
+}
+
+ 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 14vw;
+    min-height: 25vh;
+    padding: 12px 16px;
+    z-index: 1;
+    text-align: center;
+    background-color: rgba(253, 246, 246, 0.6);
+    border-radius: 5%;
+}
+ 
+.dropdown-content a {
+    display: inline-block;
+}
+ 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+ 
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+ul.mid
+{
+	text-align: left; 
+	display: inline;
+	text-decoration: none;
+
+}
+
+li.mid
+{
+	display:inline;	
+	text-decoration: none;
+	text-align: left;
+	text-indent: none;
+}
+a.mid:link, a.mid:visited
+{
+	display: inline;
+	/*background-color: #ffffff;*/
+	font-size: 25px;
+	font-style: bold;
+	color:white;
+	text-decoration: none;
+	padding: 10px 15px;
+	font-family: comic sans ms;
+    text-align: left;
+
+	margin: 2px;
+
+}
+a.mid:hover, a.mid:active
+{
+	color:  #3C3FB5 ;
+	text-align: left;
+	text-decoration: none;
+	display: inline;
+}
+a.formLink:link, a.formLink:visited
+{
+	display: inline;
+	background-color: #0E1241;
+	font-size: 20px;
+	font-style: bold;
+	color: white;
+	text-decoration: none;
+	padding: 15px 25px;
+	border-radius: 45px;
+	display: inline;
+
+}
+
+a.formLink:hover, a.formLink:active
+{
+	background-color: #ffffff;
+	color:  #0E1241;
+	display: inline;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Arvo|Caveat|Dancing+Script|Mansalva&display=swap" rel="stylesheet">
+	<title>Voter page</title>
+	<link rel="stylesheet" type="text/css" href="voter.css">
+</head>
+<body>
+                    
+    <div class="logo-link">
+        <img src="http://icons.iconarchive.com/icons/iconarchive/blue-election/512/Election-Vote-icon.png" alt="logo" border="0" height="70" width="65">
+    </div>
+    <div class="vertical_align" style=" color:black;font-size: 18px;"> 
+        <h1 style="font-family: 'Merriweather', serif;">Easypolls</h1>
+        <h4 style="font-family: 'Dancing Script', cursive;">Every vote counts</h4>
+    </div>
+	<br>
+	<ul class="mid">
+            <li class="mid"> <a class="mid" href="voter.php">My profile</a> </li>
+            <li class="mid"> <a class="mid" href="poll.php">Poll</a></li>
+            <li class="mid"> <a class="mid" href="logout.php">Log out</a></li>
+        </ul>
+	<br>
+	<br>
+	<br>
+	<br>	
+	<script>
+    let box = document.querySelectorAll(".box");
+	function frontFunction() {
+		box.forEach(x => x.addEventListener("click", function () {
+			this.classList.add("active"); }));
+	}
+	function backFunction() {
+		box.forEach(x => x.addEventListener("click", function () {
+		this.classList.remove("active"); }));
+	}
+</script>
+</body>
+</html>

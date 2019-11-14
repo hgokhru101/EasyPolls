@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+</head>
+<body>
+        <form action="login.php" class="login-form" method="POST">
+        <h1>Login</h1>
+        <img src="icon.png" class="icon">
+        <div class="txtb">
+          <input name="uname" type="text">
+          <span data-placeholder="Username"></span>
+        </div>
+        <div class="txtb">
+          <input name="upassword" type="password">
+          <span data-placeholder="Password"></span>
+        </div>
+        <input name="submit" type="submit" class="logbtn" value="Login">
+      </form>
+      <script type="text/javascript">
+      $(".txtb input").on("focus",function(){
+        $(this).addClass("focus");
+      });
+      $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+      </script>
+</body>
+</html>
+

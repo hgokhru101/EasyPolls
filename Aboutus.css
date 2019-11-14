@@ -1,0 +1,171 @@
+body{
+    background-image: url('Aboutus.jpg');
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    background-repeat: no-repeat;
+    top:0;
+    bottom:0;
+    z-index:-10;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+.card-section{
+  width: 100%;
+  padding:30px 0;
+  
+}
+
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0;
+}
+.card-section h1{
+  text-align: center;
+  text-transform: uppercase;
+  color:white;
+}
+
+.border{
+  width: 180px;
+  height: 4px;
+  background: white;
+  margin: 60px auto;
+}
+
+.testimonials{
+    margin: 100px auto 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
+    grid-gap: 20px;
+}
+.side-menu{
+    width: 09em;
+    height: auto;
+    margin: 17em auto 0;
+    line-height: 2em;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -7em;
+}
+.side-menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.side-menu ul li{
+    display: block;
+    background-color: #333;
+    height: 5em;
+    padding: 1em 1.5em;
+    position: relative;
+    transition: transform .5s,background-color .5s, color .5s;
+}
+.side-menu ul li:nth-child(1){
+    background-color: #00aced;
+}
+.side-menu ul li:nth-child(2){
+    background-color: #3b5998;
+}
+.side-menu ul li:nth-child(3){
+    background-color: #00a300;
+}
+.side-menu ul li:hover{
+    background-color:#339966;
+    transform: translateX(5.89em);
+}
+.side-menu ul li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+.side-menu ul li span{
+    display: block;
+    position: absolute;
+    font-size: 1em;
+    line-height: 2em;
+    height: 1em;
+    top: 10em;
+    bottom: 0;
+    margin: 0 auto;
+    padding: 1em 1.5em;
+    right: 0.1666667em;
+    color: #f8f6ff;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.testimonials .card{
+    position: relative;
+    width: 330px;
+    margin: 0 80px;
+    background-color: #333;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,.5);
+    overflow: hidden;
+}
+.testimonials .card .content
+{
+    z-index: 2;
+    position: relative;
+}
+.testimonials .card .layer{
+    position: absolute;
+    top: calc(100% - 2px);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#03a9f4, #e91ee3);
+    z-index: 1;
+    transition: .7s;
+}
+.testimonials .card:hover .layer{
+    top: 0;
+}
+.testimonials .card .content p{
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+}
+.testimonials .card .content .image{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+.testimonials
+{
+	margin-left:50px;
+	margin-right:50px;
+}
+.testimonials .card .content .details h2
+{
+    font-size: 18px;
+    color: #fff;
+}
+.testimonials .card .content .details h2 span
+{
+    color: #03a9f4;
+    font-size: 14px;
+    transition: .7s;
+}
+.testimonials .card:hover .content .details h2 span
+{
+    color: #fff;
+}

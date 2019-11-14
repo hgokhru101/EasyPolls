@@ -1,0 +1,126 @@
+body
+{
+	font-family: verdana;
+	font-size: 15px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin-left:40px; 
+	margin-right:40px;
+	background-size: cover;
+    background-position: center;
+    top:0;
+    bottom:0;
+    z-index:-10;
+    position:relative;
+	background-image: url("admin.jpg"); 
+}
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size:60px;
+}
+.form
+{
+    text-align:left;
+    margin-left:80px; 
+    color:white;
+	font-size: 30px;
+}
+span{
+    font-family: 'Jomolhari', serif;
+    font-weight: bold;
+    
+}
+
+label{
+	font-family: verdana;
+	font-size: 15px;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.logo-link{
+    display: inline-block;
+    position: relative;
+    top: 60px;
+    left: 185px;
+    margin: 0 24px;
+}
+.logo-link img {
+    display: block;
+}
+.vertical_align{ 
+    position: relative;
+	padding-top:30px;
+    left: 500px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+ul.mid
+{
+	text-align: left; 
+	display: inline;
+	text-decoration: none;
+
+}
+
+li.mid
+{
+	display:inline;	
+	text-decoration: none;
+	text-align: left;
+	text-indent: none;
+}
+a.mid:link, a.mid:visited
+{
+	display: inline;
+	/*background-color: #ffffff;*/
+	font-size: 25px;
+	font-style: bold;
+	color:white;
+	text-decoration: none;
+	padding: 10px 15px;
+	font-family: comic sans ms;
+    text-align: left;
+
+	margin: 2px;
+
+}
+a.mid:hover, a.mid:active
+{
+	color:  #3C3FB5 ;
+	text-align: left;
+	text-decoration: none;
+	display: inline;
+}
+a.formLink:link, a.formLink:visited
+{
+	display: inline;
+	background-color: #0E1241;
+	font-size: 20px;
+	font-style: bold;
+	color: white;
+	text-decoration: none;
+	padding: 15px 25px;
+	border-radius: 45px;
+	display: inline;
+
+}
+
+a.formLink:hover, a.formLink:active
+{
+	background-color: #ffffff;
+	color:  #0E1241;
+	display: inline;
+}
+.form {
+width:450px;
+float:center;
+font-family:'Droid Serif',serif;
+padding-left:30px
+}
+.form h2 {
+text-align:center;
+text-shadow:2px 2px 2px #cfcfcf
+}
